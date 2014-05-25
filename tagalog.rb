@@ -5,7 +5,7 @@ require 'pp'
 require 'colorize'
 
 load 'pair_reader.rb'
-load 'selector.rb'
+load 'pair_selector.rb'
 load 'pair.rb'
 load 'game.rb'
 
