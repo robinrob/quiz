@@ -12,7 +12,8 @@ class Game
       continue = true
       guesses.times do |i|
         print pair.tagalog.cyan + ": "
-        guess = STDIN.gets.chomp.strip
+        guess = STDIN.gets.chomp.strip.downcase()
+        answers = pair.english.downcase().split("-").each { |str| str.replace(str.strip) }
         answer = pair.english
 
         if guess == "pass" or guess == "p"
@@ -21,7 +22,12 @@ class Game
 
         elsif guess == answer
           response = "Yes!".green
+          if answers.size() > 1
+            response << " (" + answer + ")"
+          end
+            
           continue = false
+          
 
         elsif guess == "exit"
           exit(0)

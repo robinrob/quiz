@@ -8,7 +8,7 @@ class PairReader
 
     CSV.foreach(filename, :headers => true) do |csv_obj|
 
-      pairs << Pair.new(csv_obj['Tagalog'], csv_obj['English'])
+      pairs << Pair.new(csv_obj['Question'], csv_obj['Answer'])
 
     end
 
