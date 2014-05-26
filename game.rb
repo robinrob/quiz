@@ -6,6 +6,7 @@ class Game
 
 
   def play(goes, guesses)
+    score = 0
     goes.times do
       pair = @selector.select()
 
@@ -20,7 +21,8 @@ class Game
           response = answer.blue
           continue = false
 
-        elsif guess == answer
+        elsif answers.include?(guess)
+          score = score + 1
           response = "Yes!".green
           if answers.size() > 1
             response << " (" + answer + ")"
@@ -44,6 +46,8 @@ class Game
       end
 
     end
+    
+    puts "score: #{score}/#{goes}".yellow
 
   end
 

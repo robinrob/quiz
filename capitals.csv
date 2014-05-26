@@ -1,11 +1,11 @@
 Question,Answer
-Netherlands,AMSTERDAM,
-Andorra,ANDORRA LA VELLA,
-Turkey,ANKARA,
-Greece,ATHENS,
-Northen Ireland,BELFAST,
-Serbia,BELGRADE,
-Germany,BERLIN,
+Netherlands,AMSTERDAM
+Andorra,ANDORRA LA VELLA
+Turkey,ANKARA
+Greece,ATHENS
+Northen Ireland,BELFAST
+Serbia,BELGRADE
+Germany,BERLIN
 Switzerland,BERN,
 Slovakia,BRATISLAVIA,
 Belgium,BRUSSELS,
@@ -80,7 +80,7 @@ Pakistan,ISLAMABAD,
 Indonesia,JAKARTA,
 Afgahnistan,KABUL,
 Nepal,KATHMANDU,
-Malaysia,KUALAR LUMPAR - PUTRAJAYA,PUTRAJAYA
+Malaysia,KUALAR LUMPAR - PUTRAJAYA
 Kuwait,KUWAIT CITY,
 Maldives,MALE,
 Bahrain,MANAMA,
@@ -209,35 +209,36 @@ Belize,BELMOPAN,
 Barbados,BRIDGETOWN,
 St Kitts & Nevis,BASSETERRE,
 St Lucia,CASTRIES,
-Turks & Caicos Islands,COCKBURN TOWN,
-United States Virgin Islands,CHARLOTTE AMALIE,
-Cayman Islands,GEORGETOWN,
-Guatemala,GUATEMALA CITY,
-Saint Barthélemy,GUSTAVIA,
+Turks & Caicos Islands,COCKBURN TOWN
+United States Virgin Islands,CHARLOTTE AMALIE
+Cayman Islands,GEORGETOWN
+Guatemala,GUATEMALA CITY
+Saint Barthélemy,GUSTAVIA
 Cuba,HAVANA,
 Jamaica,KINGSTON,
-St Vincent & the Grenandines,KINGSTOWN,
+St Vincent & the Grenandines,KINGSTOWN
 Nicaragua,MANAGUA,
-Saint Martin,MARIGOT,
-Bahamas,NASSAU,
+Saint Martin,MARIGOT
+Bahamas,NASSAU
 Aruba,ORANGESTAND,
-Panama,PANAMA CITY,
+Panama,PANAMA CITY
 Monserrat,PLYMOUTH,
-Haiti,PORT AU PRINCE,
-Trinidad & Tobago,PORT OF SPAIN,
-British Virgin Islands,ROAD TOWN,
+Haiti,PORT AU PRINCE
+Trinidad & Tobago,PORT OF SPAIN
+British Virgin Islands,ROAD TOWN
 Dominica,ROSEAU,
-Costa Rica,SAN JOSE,
-Puerto Rico,SAN JUAN,
-El Salvador,SAN SALVADOR,
-Dominican Republic,SANTA DOMINGO,
+Costa Rica,SAN JOSE
+Puerto Rico,SAN JUAN
+El Salvador,SAN SALVADOR
+Dominican Republic,SANTA DOMINGO
 Grenada,ST GEORGE'S,
-Antigua & Barbuda,ST JOHN'S,
+Antigua & Barbuda,ST JOHN'S
 Honduras,TEGUCIGALPA,
 Anguilla,THE VALLEY,
-Neverlands Antilles,WILLEMSTAD,
+Neverlands,AMSTERDAM
+Antilles,WILLEMSTAD
 Bermuda,HAMILTON,
 Mexico,MEXICO CITY,
 Canada,OTTAWA,
 Saint Pierre & Miquelon,SAINT-PIERRE,
-United States of America,WASHINGTON DC,
+United States of America,WASHINGTON DC
