@@ -5,17 +5,18 @@ balikat,shoulder
 ulo,head
 hita,leg
 labi,lip
+bibig,mouth
 pisgni,cheek
 dibdib,chest
 ilong,nose
 ngipin,teeth
 tenga,ears
-tainga,ear
 buhok,hair
 chin,baba
 kamay,hand
+daliri,finger
 braso,arm
-siko,elbow
+sing,elbow
 kilikili,armpit
 leeg,neck
 tiyan,stomach
@@ -31,6 +32,7 @@ magandang umaga,good morning
 pinto,door
 bintana,window
 ulan,rain
+ulad,cloud
 umulan,raining
 araw,sun
 napaka,very
@@ -88,3 +90,31 @@ huwebes,thursday
 biernes,friday
 sabado,saturday
 lingo,sunday
+necklace,kwintas
+bracelet,porselas
+earrings,sing-sing
+dila,tongue
+halik,kiss
+halikan,to kiss
+sinungaling,liar
+january,enero
+february,pebrero
+march,martsa
+april,abril
+may,mayo
+june,hunyo
+july,hulyo
+august,agosto
+september,setyembre
+october,oktubre
+november,nobyembre
+december,disyembre
+gusto,i like
+ayoko,i don't like
+yakap,hug
+yakapin,to hug
+panahon,season
+tagsibol,spring
+tag-init,summer
+taglagas,autumn
+taglamig,winter
