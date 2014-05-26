@@ -1,0 +1,4 @@
+[submodule "robins-rakefile"]
+	path = robins-rakefile
+	url = git@bitbucket.org:robinrob/rakefile.git
+	branch = master
