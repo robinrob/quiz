@@ -1,4 +1,0 @@
-[submodule "robins-rakefile"]
-	path = robins-rakefile
-	url = bb:robinrob/rakefile.git
-	branch = master
