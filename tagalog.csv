@@ -90,25 +90,25 @@ huwebes,thursday
 biernes,friday
 sabado,saturday
 lingo,sunday
-necklace,kwintas
-bracelet,porselas
-earrings,sing-sing
+kwintas,necklace
+porselas,bracelet
+sing-sing,earrings
 dila,tongue
 halik,kiss
 halikan,to kiss
 sinungaling,liar
-january,enero
-february,pebrero
-march,martsa
-april,abril
-may,mayo
-june,hunyo
-july,hulyo
-august,agosto
-september,setyembre
-october,oktubre
-november,nobyembre
-december,disyembre
+enero,january
+pebrero,february
+martsa,march
+abril,april
+mayo,may
+hunyo,june
+hulyom,july
+agosto,august
+setyembre,september
+oktubre,october
+nobyembre,november
+disyembre,december
 gusto,i like
 ayoko,i don't like
 yakap,hug
@@ -118,3 +118,9 @@ tagsibol,spring
 tag-init/tag-araw,summer
 taglagas,autumn
 taglamig,winter
+ngayon,today
+maligayang kaarawan,happy birthday
+pasko,christmas
+bituka,intestine
+botika,pharmacy
+butiki,lizard
