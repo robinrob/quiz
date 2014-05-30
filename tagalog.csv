@@ -89,14 +89,14 @@ huwebes,thursday
 biernes,friday
 sabado,saturday
 lingo,sunday
-necklace,kwintas
-bracelet,porselas
-earrings,sing-sing
+kwintas,necklace
+porselas,bracelet
+sing-sing,earrings
 dila,tongue
 halik,kiss
 halikan,to kiss
 sinungaling,liar
-enero,january,
+enero,january
 pebrero,february
 martsa,march
 abril,april
@@ -117,3 +117,9 @@ tagsibol,spring
 tag-init/tag-araw,summer
 taglagas,autumn
 taglamig,winter
+ngayon,today
+maligayang kaarawan,happy birthday
+pasko,christmas
+bituka,intestine
+botika,pharmacy
+butiki,lizard
