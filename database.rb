@@ -1,4 +1,16 @@
+require 'csv'
+
+load 'record.rb'
+
+
 class Database
+
+  QUESTION_COL = "question"
+
+  ANSWER_COL = "answer"
+
+  MARKED_COL = "marked"
+
 
   def initialize(filename)
 
@@ -8,9 +20,30 @@ class Database
 
 
   def read_all()
+    records = []
+
     CSV.foreach(@filename, :headers => true) do |csv_obj|
 
-      pairs << Pair.new(csv_obj['Question'], csv_obj['Answer'])
+      if (csv_obj[MARKED_COL] == "true")
+        marked = true
+      else
+        marked = false
+      end
+
+      records << Record.new(csv_obj[QUESTION_COL], csv_obj[ANSWER_COL], marked)
+
+    end
+
+    records
+
+  end
+
+
+  def write_all(data)
+
+    data.foreach do |record|
+
+      puts record
 
     end
 
