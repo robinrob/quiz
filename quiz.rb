@@ -4,11 +4,9 @@ require 'optparse'
 require 'optparse/time'
 require 'ostruct'
 require 'pp'
-require 'colorize'
 
-load 'pair_reader.rb'
-load 'pair_selector.rb'
-load 'pair.rb'
+load 'selector.rb'
+load 'database.rb'
 load 'game.rb'
 
 options = OpenStruct.new
@@ -42,8 +40,8 @@ end
 
 opt_parser.parse(ARGV)
 
-pairs = PairReader.new().read(options.filename)
+records = Database.new(options.filename).read_all()
 
-selector = PairSelector.new(pairs)
+selector = Selector.new(records)
 
 Game.new(selector).play(options.times, options.guesses)

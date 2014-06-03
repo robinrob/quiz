@@ -8,14 +8,14 @@ class Game
   def play(goes, guesses)
     score = 0
     goes.times do
-      pair = @selector.select()
+      record = @selector.select()
 
       continue = true
       guesses.times do |i|
-        print pair.tagalog.cyan + ": "
+        print record.question.cyan + ": "
         guess = STDIN.gets.chomp.strip.downcase()
-        answers = pair.english.downcase().split("-").each { |str| str.replace(str.strip) }
-        answer = pair.english
+        answers = record.answer.downcase().split("-").each { |str| str.replace(str.strip) }
+        answer = record.answer
 
         if guess == "pass" or guess == "p"
           response = answer.blue
