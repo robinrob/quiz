@@ -1,3 +1,5 @@
+require 'colorize'
+
 class Game
 
   def initialize(selector)
@@ -14,11 +16,10 @@ class Game
       guesses.times do |i|
         print record.question.cyan + ": "
         guess = STDIN.gets.chomp.strip.downcase()
-        answers = record.answer.downcase().split("-").each { |str| str.replace(str.strip) }
-        answer = record.answer
+        answers = record.answers
 
         if guess == "pass" or guess == "p"
-          response = answer.blue
+          response = reveal_answers(answers)
           continue = false
 
         elsif answers.include?(guess)
@@ -29,13 +30,12 @@ class Game
           end
             
           continue = false
-          
 
         elsif guess == "exit"
           exit(0)
 
-        elsif i == guesses - 1
-          response = answer.blue
+        elsif i + 1 == guesses
+          response = reveal_answers(answers)
 
         else
           response = "No!".red
@@ -49,6 +49,11 @@ class Game
     
     puts "score: #{score}/#{goes}".yellow
 
+  end
+
+
+  def reveal_answers(answers)
+    answers.join(" - ").blue
   end
 
 end

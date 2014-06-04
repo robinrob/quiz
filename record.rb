@@ -1,8 +1,8 @@
 class Record
 
-  def initialize(question, answer, marked)
+  def initialize(question, answers, marked)
     @question = question
-    @answer = answer
+    @answers = answers
     @marked = marked
   end
 
@@ -12,8 +12,8 @@ class Record
   end
 
 
-  def answer
-    @answer
+  def answers
+    @answers
   end
 
 
