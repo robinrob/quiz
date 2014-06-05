@@ -45,16 +45,24 @@ class TestDatabase < Test::Unit::TestCase
 
 
   def test_should_read_1_record_marked_true()
+<<<<<<< HEAD
     #$stdout, $stderr = STDOUT, STDERR
+    data = Database.new("test_data/1_record.rcsv").read_all()
+=======
     data = Database.new("test_data/1_record.csv").read_all()
+>>>>>>> 3c4b85b20f4f4755599009a0a3a41026978eae01
 
     assert_equal(true, data[0].marked)
   end
 
 
   def test_should_read_2_records_marked_true_and_false()
+<<<<<<< HEAD
     #$stdout, $stderr = STDOUT, STDERR
+    data = Database.new("test_data/2_records.rcsv").read_all()
+=======
     data = Database.new("test_data/2_records.csv").read_all()
+>>>>>>> 3c4b85b20f4f4755599009a0a3a41026978eae01
 
     assert_equal(true, data[0].marked)
     assert_equal(false, data[1].marked)

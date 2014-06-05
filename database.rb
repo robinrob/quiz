@@ -2,6 +2,7 @@ require 'csv'
 
 load 'record.rb'
 
+MULTI_ANSWER_DELIMITER = "-"
 
 class Database
 
@@ -30,7 +31,9 @@ class Database
         marked = false
       end
 
-      records << Record.new(csv_obj[QUESTION_COL], csv_obj[ANSWER_COL], marked)
+      records << Record.new(csv_obj[QUESTION_COL],
+                            csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
+                            marked)
 
     end
 
