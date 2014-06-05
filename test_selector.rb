@@ -1,33 +1,28 @@
 require "test/unit"
 
-load "database.rb"
+load "record_builder.rb"
+load "selector.rb"
 
 
 class TestDatabase < Test::Unit::TestCase
 
-  def should_read(filename)
+  def test_should_select_1_item()
+    builder = RecordBuilder.new()
+    items = [builder.with_question("question").with_answers(["answer"]).build()]
 
-    data = Database.new(filename).read_all()
+    item = Selector.new(items).select()
 
-    assert_equal(1, data.size())
+    assert_not_nil(item)
   end
 
 
-  def test_should_read_1_record()
-    $stdout, $stderr = STDOUT, STDERR
+  def test_should_select_1_marked_item()
+    builder = RecordBuilder.new()
+    items = [builder.with_question("question").with_answers(["answer"]).with_marked("true").build()]
 
-    puts "hello"
+    item = Selector.new(items).select()
 
-    should_read('test_data/1_record.rcsv')
-  end
-
-
-  def test_should_read_3_records()
-    $stdout, $stderr = STDOUT, STDERR
-
-    puts "hello"
-
-    should_read('test_data/3_records.rcsv')
+    assert(true, item.marked)
   end
 
 end

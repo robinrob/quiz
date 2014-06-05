@@ -1,6 +1,6 @@
 class Record
 
-  def initialize(question, answers, marked)
+  def initialize(question=nil, answers=nil, marked=false)
     @question = question
     @answers = answers
     @marked = marked
@@ -12,13 +12,27 @@ class Record
   end
 
 
+  def question=(question)
+    @question=question
+  end
+
+
   def answers
     @answers
   end
 
 
+  def answers=(answers)
+    @answers = answers
+  end
+
+
   def marked
     @marked
+  end
+
+  def marked=(marked)
+    @marked=marked
   end
 
 end
