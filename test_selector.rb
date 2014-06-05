@@ -18,7 +18,7 @@ class TestDatabase < Test::Unit::TestCase
 
     puts "hello"
 
-    should_read('test_data/1_record.csv')
+    should_read('test_data/1_record.rcsv')
   end
 
 
@@ -27,7 +27,7 @@ class TestDatabase < Test::Unit::TestCase
 
     puts "hello"
 
-    should_read('test_data/3_records.csv')
+    should_read('test_data/3_records.rcsv')
   end
 
 end

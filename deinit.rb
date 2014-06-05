@@ -2,7 +2,7 @@
 
 def deinit_all()
   
-  CSV.foreach("repos.csv", :headers => true) do |csv_obj|
+  CSV.foreach("repos.rcsv", :headers => true) do |csv_obj|
   
     deinit(csv_obj['Repo'])
     
