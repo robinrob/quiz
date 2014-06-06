@@ -4,7 +4,7 @@ load "record_builder.rb"
 load "selector.rb"
 
 
-class TestDatabase < Test::Unit::TestCase
+class TestSelector < Test::Unit::TestCase
 
   def test_should_select_1_item()
     builder = RecordBuilder.new()
