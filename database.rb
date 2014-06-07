@@ -42,11 +42,13 @@ class Database
   end
 
 
-  def write_all(data)
+  def write_all(data, filename)
 
-    data.foreach do |record|
+    open(filename, mode = "wb", options = Hash.new ) do |csv|
 
-      puts record
+      data.each do |record|
+        csv << record
+      end
 
     end
 

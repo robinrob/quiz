@@ -31,6 +31,7 @@ class Record
     @marked
   end
 
+
   def marked=(marked)
     @marked=marked
   end
