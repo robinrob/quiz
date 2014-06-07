@@ -4,47 +4,54 @@ load "response.rb"
 
 class Game
 
-  def initialize(selector, database)
+  def initialize(database, selector)
       @selector = selector
       @database = database
       @score = 0
+      @current_question
+      @exit = false
   end
 
 
   def play(goes, guesses)
     goes.times do
-      record = @selector.select()
+      @current_question = @selector.select_marked()
 
       guesses.times do |i|
-        print record.question.cyan + ": "
+        print @current_question.question.cyan + ": "
         guess = STDIN.gets.chomp.strip.downcase()
-        answers = record.answers
+        answers = @current_question.answers
 
-        break unless respond(guess, record.answers)
+        break unless respond(guess, @current_question.answers, guesses - (i - 1))
       end
-    
-    puts "score: #{score}/#{goes}".yellow
+
+      break if @exit
 
     end
+
+    puts "score: #{@score}/#{goes}".yellow
+
   end
 
 
-  def respond(guess, answers)
+  def respond(guess, answers, guesses_remaining)
 
     if guess == "pass" or guess == "p"
-      response = _pass(answers)
+      response = _pass()
 
     elsif answers.include?(guess)
-      response = _correct(answers)
+      response = _correct()
 
     elsif guess == "exit"
-      exit(0)
+      @exit = true
+      response = Response.new("Exiting ...".magenta, false)
 
-    elsif i + 1 == guesses
-      response = reveal_answers(answers)
+    elsif @guesses_remaining == 0
+      response = reveal_answers()
+      @database.mark(@current_question.question)
 
     else
-      response = _incorrect(answers)
+      response = _incorrect(guesses_remaining)
     end
 
     puts response.response + "\n"
@@ -53,30 +60,31 @@ class Game
   end
 
 
-  def _pass(answers)
-    Response.new(_reveal_answers(answers), false)
+  def _pass()
+    @database.mark(@current_question.question)
+    Response.new(_reveal_answers(), false)
   end
 
 
-  def _reveal_answers(answers)
-    answers.join(" - ").blue
+  def _reveal_answers()
+    @current_question.answers.join(" - ").blue
   end
 
 
-  def _correct(answers)
+  def _correct()
     @score += 1
+    answers = @current_question.answers
     response = "Yes!".green
-
+                                       e
     if answers.size() > 1
       response << " (" + answers.join(" ") + ")"
     end
 
-    Response.new(response, true)
+    Response.new(response, false)
   end
 
 
-  def _incorrect(answers)
-
+  def _incorrect(guesses_remaining)
     Response.new("No!".red, true)
   end
 

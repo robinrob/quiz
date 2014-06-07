@@ -40,8 +40,13 @@ end
 
 opt_parser.parse(ARGV)
 
-records = Database.new(options.filename).read_all()
+database = Database.new(options.filename)
+records = database.read_all()
 
 selector = Selector.new(records)
 
-Game.new(selector).play(options.times, options.guesses)
+Game.new(database, selector).play(options.times, options.guesses)
+
+puts "Saving ...".magenta
+
+database.write_all()

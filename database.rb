@@ -6,6 +6,8 @@ MULTI_ANSWER_DELIMITER = "-"
 
 class Database
 
+  $stdout, $stderr = STDOUT, STDERR
+
   QUESTION_COL = "question"
 
   ANSWER_COL = "answer"
@@ -16,12 +18,14 @@ class Database
   def initialize(filename)
 
     @filename = filename
+    @data = nil
+    @headers = nil
 
   end
 
 
   def read_all()
-    records = []
+    @data = []
 
     CSV.foreach(@filename, :headers => true) do |csv_obj|
 
@@ -31,27 +35,68 @@ class Database
         marked = false
       end
 
-      records << Record.new(csv_obj[QUESTION_COL],
-                            csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
-                            marked)
+      @headers = csv_obj.headers
+      @data << Record.new(csv_obj[QUESTION_COL],
+                          csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
+                          marked)
 
     end
 
-    records
+    @data
 
   end
 
 
-  def write_all(data, filename)
+  def write_raw(raw_data)
 
-    open(filename, mode = "wb", options = Hash.new ) do |csv|
+    open(@filename, mode = "wb", options = Hash.new ) do |csv|
 
-      data.each do |record|
-        csv << record
-      end
+      raw_data.each { |record| csv << record }
 
     end
 
+  end
+
+
+  def write_all(filename=@filename)
+
+    open(filename, mode = "wb", options = Hash.new ) do |csv|
+
+      csv << @headers.join(",") + "\n"
+      @data.each { |record| csv << record.to_csv }
+
+    end
+
+  end
+
+
+  def find(question)
+    result = Array.new()
+
+    @data.each do |record|
+      if record.question == question
+        result << record
+      end
+    end
+
+    result
+
+  end
+
+
+  def mark(question)
+
+    result = find(question)
+
+    result.each do |record|
+      record.marked = true
+    end
+
+  end
+
+
+  def print()
+    @data.each {|record| puts record.to_csv}
   end
 
 end

@@ -1,154 +1,154 @@
-question,answer
-paa,foot
-tuhod,knee
-balikat,shoulder
-ulo,head
-hita,leg
-labi,lip
-bibig,mouth
-pisgni,cheek
-dibdib,chest
-buhok sa dibdib,chest hair
-balahibo,chest hair
-ilong,nose
-ngipin,teeth
-tenga,ears
-buhok,hair
-chin,baba
-kamay,hand
-palad,palm
-daliri,finger
-kuko,fingernail
-braso,arm
-sing,elbow
-kilikili,armpit
-leeg,neck
-tiyan,stomach
-tinggil,clitoris
-balat,skin
-puki,vagina
-buto (slow),penis
-maiinit,hot
-malamig,cold
-bulati,warm
-dito,here
-dyan,there
-salamat,thank you
-magandang gabi,goodnight
-magandang umaga,good morning
-pinto,door
-bintana,window
-ulan,rain
-ulad,cloud
-umulan,raining
-araw,sun
-napaka,very
-ikaw/mo,you
-ako,i
-ilaw,light
-madilim,dark
-puso,heart
-bato,rock
-mahal,love
-ibigin,loved
-lamesa/mesa,table
-upuan,chair
-damit,clothes
-kiliti,tickle
-baboy,pig
-aso,dog
-tota,puppy
-pusa,cat
-kuping,kitten
-ipis,cockroach
-gagamba,spider
-daga,rat/mouse
-gabayo,horse
-manok,chicken
-kambing,goat
-ahas,snake
-ibon,bird
-kinikilig,:)
-makaTI,itchy
-tagpuan,meeting place
-biro,joke
-kanta,song
-pag-aaral,study
-mabaho,smelly
-ngiti,smile
-tawa,laugh
-iyak,cry
-galIt,angry
-tampO,displeasure
-masayA,happy
-malungkot,sad
-inip,bored
-lumakad,walk
-palakad,to walk
-gumagapang,crawling
-gumapa,crawl
-ligaw,court
-liligawan,to court
-nililigawan,courting
-liligawan kita,i'm gunna court you
-tingin,look
-tumitingi,looking
-tumingin,looked
-panaginip,dream
-panaginipin,dreaming
-napanaginipan,dreamed
-oo naman,of course
-tiis,suffer
-lunes,monday
-martes,tuesday
-miyerkules,wednesday
-huwebes,thursday
-biernes,friday
-sabado,saturday
-lingo,sunday
-kwintas,necklace
-porselas,bracelet
-sing-sing,earrings
-dila,tongue
-halik,kiss
-halikan,to kiss
-sinungaling,liar
-enero,january
-pebrero,february
-martsa,march
-abril,april
-mayo,may
-hunyo,june
-hulyo,july
-agosto,august
-setyembre,september
-oktubre,october
-nobyembre,november
-disyembre,december
-gusto,i like
-ayoko,i don't like
-yakap,hug
-yakapin,to hug
-panahon,season
-tagsibol,spring
-tag-init/tag-araw,summer
-taglagas,autumn
-taglamig,winter
-ngayon,today
-maligayang kaarawan (greeting),happy birthday
-maligayang bati (singing),happy birthday
-pasko,christmas
-bituka,intestine
-botika,pharmacy
-butiki,lizard
-plato,plate
-buto (fast),bowl
-baso,glass
-kutsara,spoon
-dinidor,fork
-bola-bola,flattering words
-kalabaw,carabao
-pawis,sweat
-mona,first
-maganda ka,you're beautiful
-ewan ko,i don't know
+question,answer,marked
+paa,foot,false
+tuhod,knee,false
+balikat,shoulder,false
+ulo,head,false
+hita,leg,false
+labi,lip,false
+bibig,mouth,false
+pisgni,cheek,false
+dibdib,chest,false
+buhok sa dibdib,chest hair,false
+balahibo,chest hair,false
+ilong,nose,true
+ngipin,teeth,false
+tenga,ears,false
+buhok,hair,false
+chin,baba,false
+kamay,hand,false
+palad,palm,false
+daliri,finger,false
+kuko,fingernail,false
+braso,arm,false
+sing,elbow,false
+kilikili,armpit,false
+leeg,neck,false
+tiyan,stomach,false
+tinggil,clitoris,false
+balat,skin,false
+puki,vagina,false
+buto (slow),penis,false
+maiinit,hot,false
+malamig,cold,false
+bulati,warm,false
+dito,here,true
+dyan,there,false
+salamat,thank you,false
+magandang gabi,goodnight,false
+magandang umaga,good morning,false
+pinto,door,false
+bintana,window,false
+ulan,rain,false
+ulad,cloud,false
+umulan,raining,false
+araw,sun,false
+napaka,very,false
+ikaw/mo,you,false
+ako,i,false
+ilaw,light,false
+madilim,dark,false
+puso,heart,false
+bato,rock,false
+mahal,love,false
+ibigin,loved,false
+lamesa/mesa,table,false
+upuan,chair,false
+damit,clothes,false
+kiliti,tickle,false
+baboy,pig,false
+aso,dog,false
+tota,puppy,false
+pusa,cat,false
+kuping,kitten,false
+ipis,cockroach,false
+gagamba,spider,false
+daga,rat/mouse,false
+gabayo,horse,false
+manok,chicken,false
+kambing,goat,false
+ahas,snake,false
+ibon,bird,false
+kinikilig,:),false
+makaTI,itchy,false
+tagpuan,meeting place,false
+biro,joke,false
+kanta,song,false
+pag-aaral,study,false
+mabaho,smelly,false
+ngiti,smile,false
+tawa,laugh,false
+iyak,cry,false
+galIt,angry,false
+tampO,displeasure,false
+masayA,happy,false
+malungkot,sad,false
+inip,bored,false
+lumakad,walk,false
+palakad,to walk,false
+gumagapang,crawling,false
+gumapa,crawl,true
+ligaw,court,false
+liligawan,to court,false
+nililigawan,courting,false
+liligawan kita,i'm gunna court you,false
+tingin,look,false
+tumitingi,looking,true
+tumingin,looked,false
+panaginip,dream,false
+panaginipin,dreaming,false
+napanaginipan,dreamed,false
+oo naman,of course,false
+tiis,suffer,false
+lunes,monday,false
+martes,tuesday,false
+miyerkules,wednesday,false
+huwebes,thursday,true
+biernes,friday,false
+sabado,saturday,false
+lingo,sunday,false
+kwintas,necklace,false
+porselas,bracelet,false
+sing-sing,earrings,false
+dila,tongue,false
+halik,kiss,false
+halikan,to kiss,false
+sinungaling,liar,false
+enero,january,false
+pebrero,february,false
+martsa,march,false
+abril,april,false
+mayo,may,false
+hunyo,june,false
+hulyo,july,false
+agosto,august,false
+setyembre,september,false
+oktubre,october,false
+nobyembre,november,false
+disyembre,december,false
+gusto,i like,false
+ayoko,i don't like,false
+yakap,hug,false
+yakapin,to hug,false
+panahon,season,false
+tagsibol,spring,true
+tag-init/tag-araw,summer,false
+taglagas,autumn,false
+taglamig,winter,false
+ngayon,today,false
+maligayang kaarawan (greeting),happy birthday,false
+maligayang bati (singing),happy birthday,false
+pasko,christmas,false
+bituka,intestine,false
+botika,pharmacy,false
+butiki,lizard,false
+plato,plate,false
+buto (fast),bowl,false
+baso,glass,false
+kutsara,spoon,false
+dinidor,fork,false
+bola-bola,flattering words,false
+kalabaw,carabao,false
+pawis,sweat,false
+mona,first,false
+maganda ka,you're beautiful,false
+ewan ko,i don't know,false

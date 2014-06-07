@@ -3,13 +3,20 @@ class Selector
   def initialize(items)
 
     @items = items
-    @marked_items = find_marked(items)
+    @marked_items = []
+    @unmarked_items = []
+    _populate_marked_items(items)
 
   end
 
 
   def select
     select_item(@items)
+  end
+
+
+  def select_unmarked()
+    select_item(@marked_items)
   end
 
 
@@ -23,16 +30,16 @@ class Selector
   end
 
 
-  def find_marked(items)
-    marked_items = []
-
+  def _populate_marked_items(items)
     items.each do |item|
 
-      marked_items << item if item.marked
+      if item.marked
+        @marked_items << item
+      else
+        @unmarked_items << item
+      end
 
     end
-
-    marked_items
 
   end
 

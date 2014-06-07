@@ -1,3 +1,6 @@
-Array.new([1,2,3]).each { |el| puts el }
+arr = Array.new()
 
-Array.new([[1,2],[3,4],[5,6]]).each { |el| puts el }
+arr << 1
+arr.insert(0,2)
+
+puts arr

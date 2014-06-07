@@ -36,4 +36,9 @@ class Record
     @marked=marked
   end
 
+
+  def to_csv
+    "" + [@question,@answers,@marked].join(",") + "\n"
+  end
+
 end
