@@ -15,7 +15,7 @@ class Game
 
   def play(goes, guesses)
     goes.times do
-      @current_question = @selector.select_marked()
+      @current_question = @selector.select_marked_rate(0.1)
 
       guesses.times do |i|
         print @current_question.question.cyan + ": "
@@ -46,7 +46,7 @@ class Game
       @exit = true
       response = Response.new("Exiting ...".magenta, false)
 
-    elsif @guesses_remaining == 0
+    elsif guesses_remaining == 0
       response = reveal_answers()
       @database.mark(@current_question.question)
 
@@ -75,7 +75,7 @@ class Game
     @score += 1
     answers = @current_question.answers
     response = "Yes!".green
-                                       e
+
     if answers.size() > 1
       response << " (" + answers.join(" ") + ")"
     end

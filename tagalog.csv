@@ -4,7 +4,7 @@ tuhod,knee,false
 balikat,shoulder,false
 ulo,head,false
 hita,leg,false
-labi,lip,false
+labi,lip,true
 bibig,mouth,false
 pisgni,cheek,false
 dibdib,chest,false
@@ -17,57 +17,57 @@ buhok,hair,false
 chin,baba,false
 kamay,hand,false
 palad,palm,false
-daliri,finger,false
+daliri,finger,true
 kuko,fingernail,false
-braso,arm,false
+braso,arm,true
 sing,elbow,false
 kilikili,armpit,false
 leeg,neck,false
 tiyan,stomach,false
-tinggil,clitoris,false
+tinggil,clitoris,true
 balat,skin,false
-puki,vagina,false
+puki,vagina,true
 buto (slow),penis,false
 maiinit,hot,false
 malamig,cold,false
-bulati,warm,false
+bulati,warm,true
 dito,here,true
 dyan,there,false
 salamat,thank you,false
 magandang gabi,goodnight,false
 magandang umaga,good morning,false
-pinto,door,false
+pinto,door,true
 bintana,window,false
-ulan,rain,false
+ulan,rain,true
 ulad,cloud,false
-umulan,raining,false
+umulan,raining,true
 araw,sun,false
 napaka,very,false
 ikaw/mo,you,false
 ako,i,false
-ilaw,light,false
+ilaw,light,true
 madilim,dark,false
-puso,heart,false
+puso,heart,true
 bato,rock,false
 mahal,love,false
-ibigin,loved,false
+ibigin,loved,true
 lamesa/mesa,table,false
 upuan,chair,false
-damit,clothes,false
-kiliti,tickle,false
+damit,clothes,true
+kiliti,tickle,true
 baboy,pig,false
 aso,dog,false
 tota,puppy,false
 pusa,cat,false
-kuping,kitten,false
+kuping,kitten,true
 ipis,cockroach,false
-gagamba,spider,false
-daga,rat/mouse,false
-gabayo,horse,false
+gagamba,spider,true
+daga,rat/mouse,true
+gabayo,horse,true
 manok,chicken,false
 kambing,goat,false
 ahas,snake,false
-ibon,bird,false
+ibon,bird,true
 kinikilig,:),false
 makaTI,itchy,false
 tagpuan,meeting place,false
@@ -75,19 +75,19 @@ biro,joke,false
 kanta,song,false
 pag-aaral,study,false
 mabaho,smelly,false
-ngiti,smile,false
+ngiti,smile,true
 tawa,laugh,false
-iyak,cry,false
+iyak,cry,true
 galIt,angry,false
 tampO,displeasure,false
 masayA,happy,false
 malungkot,sad,false
-inip,bored,false
+inip,bored,true
 lumakad,walk,false
-palakad,to walk,false
-gumagapang,crawling,false
+palakad,to walk,true
+gumagapang,crawling,true
 gumapa,crawl,true
-ligaw,court,false
+ligaw,court,true
 liligawan,to court,false
 nililigawan,courting,false
 liligawan kita,i'm gunna court you,false
@@ -101,54 +101,54 @@ oo naman,of course,false
 tiis,suffer,false
 lunes,monday,false
 martes,tuesday,false
-miyerkules,wednesday,false
+miyerkules,wednesday,true
 huwebes,thursday,true
 biernes,friday,false
 sabado,saturday,false
 lingo,sunday,false
 kwintas,necklace,false
 porselas,bracelet,false
-sing-sing,earrings,false
-dila,tongue,false
+sing-sing,earrings,true
+dila,tongue,true
 halik,kiss,false
 halikan,to kiss,false
 sinungaling,liar,false
 enero,january,false
-pebrero,february,false
+pebrero,february,true
 martsa,march,false
 abril,april,false
 mayo,may,false
-hunyo,june,false
+hunyo,june,true
 hulyo,july,false
 agosto,august,false
 setyembre,september,false
-oktubre,october,false
+oktubre,october,true
 nobyembre,november,false
 disyembre,december,false
 gusto,i like,false
 ayoko,i don't like,false
 yakap,hug,false
-yakapin,to hug,false
+yakapin,to hug,true
 panahon,season,false
 tagsibol,spring,true
 tag-init/tag-araw,summer,false
 taglagas,autumn,false
-taglamig,winter,false
+taglamig,winter,true
 ngayon,today,false
 maligayang kaarawan (greeting),happy birthday,false
 maligayang bati (singing),happy birthday,false
 pasko,christmas,false
-bituka,intestine,false
-botika,pharmacy,false
+bituka,intestine,true
+botika,pharmacy,true
 butiki,lizard,false
-plato,plate,false
+plato,plate,true
 buto (fast),bowl,false
-baso,glass,false
+baso,glass,true
 kutsara,spoon,false
 dinidor,fork,false
 bola-bola,flattering words,false
 kalabaw,carabao,false
-pawis,sweat,false
-mona,first,false
+pawis,sweat,true
+mona,first,true
 maganda ka,you're beautiful,false
 ewan ko,i don't know,false
