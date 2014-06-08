@@ -22,7 +22,7 @@ class Game
         guess = STDIN.gets.chomp.strip.downcase()
         answers = @current_question.answers
 
-        break unless respond(guess, @current_question.answers, guesses - (i - 1))
+        break unless _respond(guess, @current_question.answers, guesses - (i - 1))
       end
 
       break if @exit
@@ -34,7 +34,7 @@ class Game
   end
 
 
-  def respond(guess, answers, guesses_remaining)
+  def _respond(guess, answers, guesses_remaining)
 
     if guess == "pass" or guess == "p"
       response = _pass()
@@ -48,7 +48,8 @@ class Game
 
     elsif guesses_remaining == 0
       response = reveal_answers()
-      @database.mark(@current_question.question)
+      #@database.mark(@current_question.question)
+      @current_question.marked = true
 
     else
       response = _incorrect(guesses_remaining)
@@ -73,6 +74,8 @@ class Game
 
   def _correct()
     @score += 1
+    @current_question.score += 1
+    puts "score: " + @current_question.score.inspect
     answers = @current_question.answers
     response = "Yes!".green
 

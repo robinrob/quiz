@@ -1,44 +1,21 @@
 class Record
 
-  def initialize(question=nil, answers=nil, marked=false)
+  attr_reader :question
+  attr_reader :answers
+  attr_accessor :marked
+  attr_accessor :score
+
+
+  def initialize(question=nil, answers=nil, marked=false, score=0)
     @question = question
     @answers = answers
     @marked = marked
-  end
-
-
-  def question
-    @question
-  end
-
-
-  def question=(question)
-    @question=question
-  end
-
-
-  def answers
-    @answers
-  end
-
-
-  def answers=(answers)
-    @answers = answers
-  end
-
-
-  def marked
-    @marked
-  end
-
-
-  def marked=(marked)
-    @marked=marked
+    @score = score.to_i
   end
 
 
   def to_csv
-    "" + [@question,@answers,@marked].join(",") + "\n"
+    "" + [@question,@answers,@marked,@score].join(",") + "\n"
   end
 
 end
