@@ -1,6 +1,25 @@
-arr = Array.new()
+#!/usr/bin/env ruby
 
-arr << 1
-arr.insert(0,2)
+load 'pgdatabase.rb'
+load 'record.rb'
 
-puts arr
+# str = "'Robin'"
+# puts str.gsub(/'/){ "\\'" }
+
+# conn = PGDatabase.conn
+# 
+# puts "database: " + conn.current_database
+# 
+# puts "rows:"
+# result = conn.query('select * from questions')
+# puts result.inspect()
+# 
+# puts "records:"
+# puts Record.all.inspect()
+# 
+# str = 'insert into questions ("id", "question","answer") values (DEFAULT, \'robin\',\'smith\')'
+# puts str
+# 
+# result = conn.query(str);
+# 
+# puts result.inspect

@@ -2,11 +2,13 @@ require 'csv'
 
 load 'record.rb'
 
-MULTI_ANSWER_DELIMITER = "-"
+
 
 class Database
 
   $stdout, $stderr = STDOUT, STDERR
+
+  MULTI_ANSWER_DELIMITER = "-"
 
   QUESTION_COL = "question"
 
