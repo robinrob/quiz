@@ -6,15 +6,31 @@ load 'record.rb'
 
 class PGDatabase
 
+  QUESTIONS_TABLE = "questions"
+
+  ID_COL = "id"
+
   QUESTION_COL = "question"
 
-  ANSWER_COL = "answer"
+  ANSWER_COL = "answers"
 
   MARKED_COL = "marked"
 
   SCORE_COL = "score"
 
   MULTI_ANSWER_DELIMITER = "-"
+
+
+  @@conn = ActiveRecord::Base.establish_connection(:adapter => "postgresql",
+                                                  :username => "msl",
+                                                  :password => "",
+                                                  :database => "quiz").connection()
+
+  def conn
+    @@conn
+  end
+
+  self.init()
 
 
   def self.init()
@@ -30,17 +46,22 @@ class PGDatabase
 
 
   def self._create()
-    @conn.query('CREATE TABLE questions (
-                 id 				     serial PRIMARY KEY,
-                 question        varchar(100) UNIQUE NOT NULL,
-                 answer		       varchar(100) NOT NULL,
-                 marked          boolean NOT NULL DEFAULT FALSE,
-                 score		       integer NOT NULL DEFAULT 0
-                );')
+    @conn.query("CREATE TABLE #{QUESTIONS_TABLE} (
+                 #{ID_COL} 			 serial PRIMARY KEY,
+                 #{QUESTION_COL} varchar(100) UNIQUE NOT NULL,
+                 #{ANSWERS_COL}  varchar(100) NOT NULL,
+                 #{MARKED_COL}   boolean NOT NULL DEFAULT FALSE,
+                 #{SCORE_COL}		 integer NOT NULL DEFAULT 0
+                );")
   end
 
 
   def self._populate()
+    self._insert_all(self._read_records())
+  end
+
+
+  def self._read_records()
     records = []
 
     CSV.foreach("tagalog.csv", :headers => true) do |csv_obj|
@@ -54,42 +75,20 @@ class PGDatabase
       headers = csv_obj.headers
 
       records << Record.new(question=csv_obj[QUESTION_COL],
-                          answer=csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
-                          marked=marked,
-                          score=csv_obj[SCORE_COL])
+                            answer=csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
+                            marked=marked,
+                            score=csv_obj[SCORE_COL])
 
     end
 
-    self._insert_all(records)
+    records
   end
 
 
   def self._insert_all(records)
     records.each do |record|
-      self._insert(record)
+      record.save()
     end
   end
 
-
-  def self._insert(record)
-    question = record.question.gsub(/'/){ "''" }
-    answers = record.answers.join(MULTI_ANSWER_DELIMITER).gsub(/'/){ "''" }
-
-    values = "values (\'#{question}\',\'#{answers}\',\'#{record.marked}\',\'#{record.score}\')"
-    query = "insert into questions (question,answer,marked,score) #{values};"
-
-    @conn.query(query)
-  end
-
-
-  @conn = ActiveRecord::Base.establish_connection(:adapter => "postgresql",
-                                                  :username => "msl",
-                                                  :password => "",
-                                                  :database => "quiz").connection()
-
-  def self.conn
-    @conn
-  end
-
-  self.init()
 end
