@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 load 'pgdatabase.rb'
-load 'record.rb'
+load 'question.rb'
 
 # str = "'Robin'"
 # puts str.gsub(/'/){ "\\'" }
@@ -15,7 +15,7 @@ load 'record.rb'
 # puts result.inspect()
 # 
 # puts "records:"
-# puts Record.all.inspect()
+# puts Question.all.inspect()
 # 
 # str = 'insert into questions ("id", "question","answer") values (DEFAULT, \'robin\',\'smith\')'
 # puts str

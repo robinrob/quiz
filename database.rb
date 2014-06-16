@@ -1,6 +1,6 @@
 require 'csv'
 
-load 'record.rb'
+load 'question.rb'
 
 
 
@@ -40,7 +40,7 @@ class Database
       end
 
       @headers = csv_obj.headers
-      @data << Record.new(question=csv_obj[QUESTION_COL],
+      @data << Question.new(question=csv_obj[QUESTION_COL],
                           answer=csv_obj[ANSWER_COL].split(MULTI_ANSWER_DELIMITER),
                           marked=marked,
                           score=csv_obj[SCORE_COL])

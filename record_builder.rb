@@ -1,9 +1,9 @@
-load 'record.rb'
+load 'question.rb'
 
 class RecordBuilder
 
   def initialize
-    @record = Record.new()
+    @record = Question.new()
   end
 
 
