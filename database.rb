@@ -2,7 +2,7 @@ require 'csv'
 
 load 'record.rb'
 
-MULTI_ANSWER_DELIMITER = "-"
+MULTI_ANSWER_DELIMITER = "/"
 
 class Database
 
