@@ -146,6 +146,7 @@ buto (fast),bowl,false,0
 baso,glass,true,2
 kutsara,spoon,false,0
 dinidor,fork,false,0
+kudsilyo,knife
 bola-bola,flattering words,false,0
 kalabaw,carabao,false,0
 pawis,sweat,true,0
@@ -162,7 +163,6 @@ anong ginagawa mo?,what are you doing?
 saan?,where?
 saan ka?,where are you?
 saan si May-May?where is May-May?
-
 bakit?,why?
 bakit ka maiinit?,why are you hot?
 bakit ka maganda?,why are you beautiful?
@@ -170,3 +170,6 @@ kailan?,when?
 kailan ka aalis,when do you leave?
 natutulog,sleeping
 ikaw ang may kasalanan,it's your fault
+sangkalan,chopping board
+babae,girl
+lalaki,boy
