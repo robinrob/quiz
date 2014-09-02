@@ -8,6 +8,7 @@ require 'pp'
 load 'selector.rb'
 load 'database.rb'
 load 'game.rb'
+load 'pgdatabase.rb'
 
 options = OpenStruct.new
 options.times = 1
@@ -40,13 +41,16 @@ end
 
 opt_parser.parse(ARGV)
 
-database = Database.new(options.filename)
-records = database.read_all()
+conn = PGDatabase.conn()
 
-selector = Selector.new(records)
-
-Game.new(database, selector).play(options.times, options.guesses)
-
-puts "Saving ...".magenta
-
-database.write_all()
+puts conn.inspect()
+#database = Database.new(options.filename)
+#records = database.read_all()
+#
+#selector = Selector.new(records)
+#
+#Game.new(database, selector).play(options.times, options.guesses)
+#
+#puts "Saving ...".magenta
+#
+#database.write_all()

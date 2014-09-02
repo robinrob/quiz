@@ -1,4 +1,4 @@
-question,answer,marked,score
+question,answers,marked,score
 paa,foot,false,0
 tuhod,knee,false,0
 balikat,shoulder,false,0
@@ -163,6 +163,7 @@ anong ginagawa mo?,what are you doing?
 saan?,where?
 saan ka?,where are you?
 saan si May-May?where is May-May?
+
 bakit?,why?
 bakit ka maiinit?,why are you hot?
 bakit ka maganda?,why are you beautiful?
