@@ -39,7 +39,7 @@ magandang umaga,good morning,false,0
 pinto,door,true,0
 bintana,window,false,0
 ulan,rain,true,0
-ulad,cloud,false,0
+ulap,cloud,false,0
 umulan,raining,true,0
 araw,sun,true,0
 napaka,very,false,1
@@ -173,3 +173,4 @@ ikaw ang may kasalanan,it's your fault
 sangkalan,chopping board
 babae,girl
 lalaki,boy
+patawad,i'm sorry
