@@ -1,14 +1,16 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH << '.'
+
 require 'optparse'
 require 'optparse/time'
 require 'ostruct'
 require 'pp'
 
-load 'selector.rb'
-load 'database.rb'
-load 'game.rb'
-load 'pgdatabase.rb'
+require 'selector'
+require 'database'
+require 'game'
+require 'pgdatabase'
 
 options = OpenStruct.new
 options.times = 1

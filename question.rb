@@ -1,4 +1,4 @@
-#load 'pgdatabase.rb'
+$LOAD_PATH << '.'
 
 class Question
 

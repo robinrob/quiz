@@ -1,7 +1,0 @@
-class QuestionsTable
-
-  NAME = 'questions'
-
-  COLS =
-
-end
