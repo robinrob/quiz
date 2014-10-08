@@ -13,7 +13,7 @@ class TestDatabase < Test::Unit::TestCase
 
 
   def test_should_read_1_record()
-    #$stdout, $stderr = STDOUT, STDERR
+    $stdout, $stderr = STDOUT, STDERR
     data = Database.new("test_data/1_record.csv").read_all()
 
     assert_equal(1, data.size())
