@@ -8,7 +8,7 @@ class Question
   attr_accessor :marked
   attr_accessor :score
 
-  @conn =  PGDatabase.conn()
+  @conn = PGDatabase.conn()
 
 
   def initialize(id=nil, question=nil, answers=nil, marked=false, score=0)
