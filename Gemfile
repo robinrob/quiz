@@ -2,4 +2,7 @@ source 'https://rubygems.org'
 
 gem 'colorize'
 gem 'pg'
-# gem 'rails'
+
+group :development do
+  # gem 'rails'
+end
