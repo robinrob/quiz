@@ -2,4 +2,6 @@ source 'https://rubygems.org'
 
 gem 'colorize'
 gem 'pg'
-gem 'rails', '4.1.4'
+
+# Cannot use rakelib gemset to run global rake tasks with this un-commented.
+# gem 'rails'
